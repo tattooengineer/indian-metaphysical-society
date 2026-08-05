@@ -6,7 +6,7 @@ import { WhatsAppButton } from "./components/WhatsAppButton";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const mono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://indianmetaphysicalsociety.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://indianmetaphysicalsociety.org";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
