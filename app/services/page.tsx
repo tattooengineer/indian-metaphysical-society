@@ -1,0 +1,9 @@
+import { services } from "../data";
+import { ButtonLink, FinalCTA, PageHero } from "../components/UI";
+
+export const metadata = { title: "Services" };
+export default function ServicesPage() {
+  return <><PageHero eyebrow="Private consultations" title="Guidance shaped around your questions." copy="Choose the service closest to your need. If you are unsure, send a general enquiry and we will help you choose responsibly."><ButtonLink href="/book">Request a consultation</ButtonLink><ButtonLink href="/contact" secondary>Ask a question first</ButtonLink></PageHero>
+    <section className="py-24"><div className="section-shell space-y-8">{services.map((s) => <article id={s.slug} key={s.slug} className="scroll-mt-28 grid gap-10 rounded-3xl border border-white/10 bg-[#090d14] p-8 md:grid-cols-[.7fr_1.3fr] md:p-12"><div><span className="font-mono text-xs text-[#d8b56a]">{s.number}</span><h2 className="mt-5 text-3xl font-light">{s.title}</h2><p className="mt-4 leading-7 text-stone-400">{s.short}</p></div><div><p className="eyebrow">What is included</p><ul className="mt-6 grid gap-4">{s.includes.map((item) => <li key={item} className="flex gap-3 border-b border-white/8 pb-4 text-stone-300"><span className="text-sky-300">◇</span>{item}</li>)}</ul><div className="mt-8"><ButtonLink href={`/book?service=${s.slug}`}>Enquire about this service</ButtonLink></div></div></article>)}</div></section>
+    <section className="section-shell"><div className="rounded-2xl border border-[#d8b56a]/20 bg-[#d8b56a]/5 p-7 text-sm leading-7 text-stone-400"><strong className="text-[#efc979]">Responsible-use note:</strong> Our services are spiritual and educational in nature. They do not diagnose, treat or cure illness and do not replace qualified medical, mental-health, legal or financial care. Individual experiences vary.</div></section><FinalCTA /></>;
+}

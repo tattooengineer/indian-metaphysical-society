@@ -1,0 +1,28 @@
+HOSTINGER DEPLOYMENT
+
+Upload this ZIP through Hostinger's Web App / Node.js deployment screen.
+
+Framework: Next.js
+Node version: 22 (or the newest available version 20+)
+Install command: npm install
+Build command: npm run build
+Start command: npm run start
+
+Do not upload this ZIP into public_html as a static ZIP. Use the Web App deployment interface.
+
+VERSION 2 ADDITIONS
+-------------------
+1. Add these environment variables in Hostinger Web App settings:
+   NEXT_PUBLIC_SITE_URL=https://your-real-domain.com
+   RAZORPAY_KEY_ID=your Razorpay Key ID
+   RAZORPAY_KEY_SECRET=your Razorpay Key Secret
+
+2. Never put RAZORPAY_KEY_SECRET in client-side code or commit a real secret publicly.
+
+3. Founder photo:
+   Add your portrait at public/founder-photo.jpg and then replace the placeholder block in app/founder/page.tsx with:
+   <img src="/founder-photo.jpg" alt="Lakshay Kaushik, founder of Indian Metaphysical Society" className="aspect-[4/5] w-full object-cover" />
+
+4. Razorpay prices are currently configured in app/api/razorpay/order/route.ts.
+
+5. The first FormSubmit submission may require email activation for contact@indianmetaphysicalsociety.com.

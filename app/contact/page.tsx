@@ -1,0 +1,8 @@
+import type { Metadata } from "next";
+import { LeadForm } from "../components/LeadForm";
+import { PageHero } from "../components/UI";
+export const metadata: Metadata = { title: "Contact", description: "Contact the Indian Metaphysical Society by email, phone or WhatsApp for readings, consultations and collaborations.", alternates: { canonical: "/contact" } };
+export default function ContactPage() {
+  return <><PageHero eyebrow="Contact us" title="Start with a simple conversation." copy="Questions about a service, collaboration or the society? Send us a message, call, or connect directly on WhatsApp." />
+    <section className="py-24"><div className="section-shell grid gap-12 lg:grid-cols-[.7fr_1.3fr]"><aside><p className="eyebrow text-[#d8b56a]">Direct contact</p><div className="mt-6 grid gap-4"><a className="text-lg text-stone-200" href="mailto:contact@indianmetaphysicalsociety.com">contact@indianmetaphysicalsociety.com</a><a className="text-lg text-stone-200" href="tel:+918398847320">+91 83988 47320</a><a className="w-fit rounded-full border border-emerald-400/30 bg-emerald-400/10 px-5 py-3 text-sm text-emerald-300" href="https://wa.me/918398847320?text=Hello%2C%20I%27d%20like%20to%20know%20more%20about%20a%20consultation." target="_blank" rel="noreferrer">Open WhatsApp →</a></div><p className="mt-7 max-w-sm leading-7 text-stone-500">For urgent medical or safety concerns, please contact an appropriate local professional or emergency service instead of using this form.</p></aside><div className="rounded-3xl border border-white/10 bg-[#090d14] p-6 sm:p-10"><LeadForm kind="contact" /></div></div></section></>;
+}
