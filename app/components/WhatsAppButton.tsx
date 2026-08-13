@@ -1,5 +1,5 @@
 export function WhatsAppButton() {
-  const href = "https://wa.me/918398847320?text=Hello%2C%20I%27d%20like%20to%20know%20more%20about%20a%20consultation%20with%20the%20Indian%20Metaphysical%20Society.";
+  const href = "https://wa.me/919665553569?text=Hello%2C%20I%27d%20like%20to%20know%20more%20about%20a%20consultation%20with%20the%20Indian%20Metaphysical%20Society.";
   return (
     <a
       href={href}

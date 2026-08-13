@@ -68,8 +68,8 @@ export function Footer() {
         <div>
           <p className="eyebrow text-[#d8b56a]">Connect</p>
           <div className="mt-4 grid gap-3 text-sm text-stone-400">
-            <Link href="/book">Book a session</Link><Link href="/share-experience">Share an experience</Link><Link href="/contact">Contact us</Link><a href="https://wa.me/918398847320" target="_blank" rel="noreferrer">WhatsApp: +91 83988 47320</a>
-            {/* <a href="tel:+918398847320">+91 83988 47320</a> */}
+            <Link href="/book">Book a session</Link><Link href="/share-experience">Share an experience</Link><Link href="/contact">Contact us</Link><a href="https://wa.me/919665553569" target="_blank" rel="noreferrer">WhatsApp: +91 83988 47320</a>
+            {/* <a href="tel:+919665553569">+91 83988 47320</a> */}
             <a href="mailto:contact@indianmetaphysicalsociety.com">contact@indianmetaphysicalsociety.com</a>
           </div>
         </div>
