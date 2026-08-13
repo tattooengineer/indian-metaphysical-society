@@ -159,7 +159,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Organization", name: "Indian Metaphysical Society", url: siteUrl, logo: `${siteUrl}/logo.png`, founder: { "@type": "Person", name: "Lakshay Kaushik" }, contactPoint: { "@type": "ContactPoint", telephone: "+91-83988-47320", contactType: "customer service", areaServed: "Worldwide", availableLanguage: ["English", "Hindi"] } },
+      { "@type": "Organization", name: "Indian Metaphysical Society", url: siteUrl, logo: `${siteUrl}/logo.png`, founder: { "@type": "Person", name: "Lakshay Kaushik" }, contactPoint: { "@type": "ContactPoint", telephone: "+91-96655-53569", contactType: "customer service", areaServed: "Worldwide", availableLanguage: ["English", "Hindi"] } },
       { "@type": "WebSite", name: "Indian Metaphysical Society", url: siteUrl },
     ],
   };
